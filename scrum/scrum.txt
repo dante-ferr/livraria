@@ -1,8 +1,11 @@
-Sistema
-
-Curso pode ser graduação ou pós-graduação
+Alunos: Dante Ferreira, Iury Sena, Paulo Ravazzano
 
 Classe: Sistema
+- faculdade: Faculdade
++ prazoMaximoExtensao() : int
+
+Classe: Faculdade
+- cursos: Arraylist<Curso>
 + registrarGraduacao(
     int codigo,
     string nome,
@@ -19,7 +22,6 @@ Classe: Sistema
     string nivel,
     int cargaHoraria
 ): void
-+ prazoMaximoExtensao() : int
 
 Classe: Curso
 - codigo: string
@@ -41,3 +43,4 @@ Classe: PosGraduacao extends Curso
 + apresentarCurso()
 + prazoMaximoExtensao() : int
 + toString()
+
