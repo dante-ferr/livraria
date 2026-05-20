@@ -1,0 +1,38 @@
+Sistema
+
+Curso pode ser graduação ou pós-graduação
+
+Classe: Sistema
++ registrarGraduacao(
+    int codigo,
+    string nome,
+    string area,
+    int disciObrig,
+    int disciOptat
+): void
++ registrarPosGraduacao(
+    int codigo,
+    string nome,
+    string area,
+    int disciObrig,
+    int disciOptat,
+    string nivel,
+    int cargaHoraria
+): void
+
+Classe: Curso
+- codigo: string
+- nome: string
+- area: string
+- disciObrig: int
+- disciOptat: int
+
+Classe: Graduacao extends Curso
+- prazo: static int
++ toString()
+
+Classe: PosGraduacao extends Curso
+- prazo: int
+- cargaHoraria: int
+- tipo: string
++ toString()
